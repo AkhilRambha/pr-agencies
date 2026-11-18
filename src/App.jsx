@@ -6,12 +6,17 @@ import Home from './pages/Home/Home.jsx'; import About from './pages/About/About
 import Services from './pages/Services/Services.jsx'; import Contact from './pages/Contact/Contact.jsx'
 import { IMG } from './data'
 export default function App() {
-  const loc = useLocation(); const [loading, setLoading] = useState(true)
+  const loc = useLocation(); const [loading, setLoading] = useState(() => window.location.pathname === '/')
   const reduceMotion = useReducedMotion()
   useEffect(() => {
+    if (loc.pathname !== '/') setLoading(false)
+  }, [loc.pathname])
+  useEffect(() => {
+    if (!loading) return undefined
+
     const t = setTimeout(() => setLoading(false), reduceMotion ? 500 : 2200)
     return () => clearTimeout(t)
-  }, [reduceMotion])
+  }, [loading, reduceMotion])
   useEffect(() => { window.scrollTo(0, 0) }, [loc.pathname])
   useEffect(() => {
     if (reduceMotion) return undefined

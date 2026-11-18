@@ -357,7 +357,7 @@ html[data-scroll-direction="down"] .scroll-motion:not(.scroll-motion .scroll-mot
     position: fixed;
     inset: 0 0 auto;
     z-index: 50;
-    padding: 18px var(--pad);
+    padding: 10px var(--pad);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -381,9 +381,10 @@ html[data-scroll-direction="down"] .scroll-motion:not(.scroll-motion .scroll-mot
 
 .logo img {
     display: block;
-    width: clamp(56px, 6vw, 72px);
+    width: clamp(52px, 5vw, 64px);
     aspect-ratio: 1;
-    object-fit: contain
+    object-fit: cover;
+    border-radius: 50%
 }
 
 .logo i {

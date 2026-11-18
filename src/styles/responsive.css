@@ -147,7 +147,7 @@ h4 {
     position: fixed;
     inset: 0 0 auto;
     z-index: 50;
-    padding: 18px var(--pad);
+    padding: 8px var(--pad);
     display: flex;
     justify-content: space-between;
     align-items: center;
