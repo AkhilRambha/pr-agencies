@@ -156,7 +156,6 @@ export default function Home() {
       <HomeShuffle className="h2 home-approach__title" text="From an Idea to an Impactful Campaign." />
       <Reveal delay={.15}><p className="lead home-approach__intro">Every brand has a story worth telling. Discover how creative thinking and thoughtful media planning can bring that story to the right audience.</p></Reveal>
       <Reveal delay={.2}>
-        <p className="home-approach__note">Illustrative stages, not a formally documented PR Agencies process.</p>
       </Reveal>
       <div className="home-approach__timeline" aria-label="Illustrative campaign stages">
         <motion.span className="home-approach__track" aria-hidden="true" {...approachTrackAnimation} />

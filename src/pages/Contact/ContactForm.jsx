@@ -59,10 +59,10 @@ export default function ContactForm() {
   const anim = prefersReducedMotion
     ? { initial: {}, animate: {}, exit: {} }
     : {
-        initial: { opacity: 0, y: 20 },
-        animate: { opacity: 1, y: 0 },
-        exit: { opacity: 0, y: -20 },
-      }
+      initial: { opacity: 0, y: 20 },
+      animate: { opacity: 1, y: 0 },
+      exit: { opacity: 0, y: -20 },
+    }
 
   return (
     <AnimatePresence mode="wait">
@@ -180,9 +180,7 @@ export default function ContactForm() {
                 )}
               </button>
             </Magnet>
-            <p className="contact-form-disclaimer">
-              This is a front-end demo. No data will be sent.
-            </p>
+
           </div>
         </motion.form>
       )}
@@ -214,9 +212,8 @@ function FloatingField({
 
   return (
     <div
-      className={`contact-floating-box${full ? ' contact-form-full' : ''} ${
-        isPopped ? 'is-popped' : ''
-      } ${isFocused ? 'is-focused' : ''} ${error ? 'has-error' : ''}`}
+      className={`contact-floating-box${full ? ' contact-form-full' : ''} ${isPopped ? 'is-popped' : ''
+        } ${isFocused ? 'is-focused' : ''} ${error ? 'has-error' : ''}`}
       onClick={() => inputRef.current?.focus()}
     >
       <label className="contact-floating-label">
