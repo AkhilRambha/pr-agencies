@@ -40,7 +40,7 @@ export default function Footer() {
                 </svg>
               </div>
             </div>
-            <p className="foot-tagline">Integrated promotions. Measurable impact.<br />For brands that want to stand out.</p>
+            <p className="foot-tagline">Creative advertising. Strategic media planning.<br />Building stronger brands across every channel.</p>
             <div className="foot-socials" aria-label="Social media links">
               <a href="#" aria-label="LinkedIn" title="LinkedIn">
                 <svg viewBox="0 0 24 24"><path d="M5.2 7.6H8v11.2H5.2V7.6Zm1.4-5.3A1.8 1.8 0 1 1 6.6 5.9a1.8 1.8 0 0 1 0-3.6ZM9.8 7.6h2.7v1.5h.1c.4-.7 1.3-1.8 3.1-1.8 3.3 0 3.9 2.2 3.9 5v6.5h-2.9v-5.7c0-1.4 0-3.1-1.9-3.1s-2.1 1.5-2.1 3v5.8H9.8V7.6Z" /></svg>
@@ -107,7 +107,7 @@ export default function Footer() {
 
         <div className="copy">
           <span>© {new Date().getFullYear()} PR Agencies. All rights reserved.</span>
-          <a className="foot-developer-credit" href="#" aria-label="Bharita Solutions Private Limited">
+          <a className="foot-developer-credit" href="https://sherize.in/" aria-label="Bharita Solutions Private Limited">
             <span>Developed by <strong>Sherize Solutions Pvt ltd </strong></span>
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7M21 3l-9 9M10 5H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" /></svg>
           </a>
